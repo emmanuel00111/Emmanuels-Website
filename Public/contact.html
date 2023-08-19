@@ -49,7 +49,7 @@
                     <h2 class="white center py-3">I'd love to hear from you</h2>
                     <p class="white center pt-2 size-up">Any questions, opinions, proposals or simply want to say hi?</p>
                     <p class="white center pb-2 size-up">Your feedback is invaluable to me. I'm excited to hear from you!</p>
-                    <form class="row g-3" action="https://formsubmit.co/emmanuela0k01@gmail.com" method="POST">
+                    <form class="row g-3" action="https://formsubmit.co/095bc281fc2e8a88d49fa97d49028dc6" method="POST">
                         <div class="col-md-6">
                             <label for="firstName" class="form-label white">First Name</label>
                             <input type="text" class="form-control background-light" id="firstName" required placeholder="Enter First Name">
@@ -101,21 +101,5 @@
       </div>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                SecureToken: "4de263ba-498c-41c1-9464-1f497eb8cbec",
-                To : 'emmanuela0k01@gmail.com',
-                From : "emmanuela0k01@gmail.com",
-                Subject : "Your Website Has Had a Visitor who Contacted",
-                Body : "Name: " + document.getElementById("firstName").value + document.getElementById("lastName").value
-                    + "<br> Email: " + document.getElementById("emailInfo").value
-                    + "<br> Phone Number: " + document.getElementById("phoneNumber").value
-                    + "<br> Message: " + document.getElementById("comments").value
-            }).then(
-            message => alert("Message Sent")
-            );
-        }
-    </script>
 </body>
 </html>
