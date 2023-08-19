@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!--Header-->
+    <!--left side-->
+    <div class="grid-container">
+        <div class="gradient-darkblue">
+            <header class="d-flex flex-wrap justify-content-center py-3">
+                <a href="../index.html" class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto  text-decoration-none">
+                  <img src="../images/logo.png" alt="E logo" width="75" height="75">
+                </a>
+            </header>
+            <section id="contact-me" class="py-4">
+                <div class="container pb-4">
+                    <h2 class="white center pt-3">Email me</h2>
+                    <h2 class="white center"><a class="white" href= "mailto:emmanueladekoya@cmail.carleton.ca"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" href>
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg></a></h2>
+                    <p class="white center pt-2 size-up">Make sure to click the icon above or use the form to the right and I would do my best to followup your contact.</p>
+                    <h2 class="white center py-3">Location</h2>
+                    <h2 class="white center"><a class="white" href="https://goo.gl/maps/822eQrzcsbX2DxfQ7"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg></a></h2>
+                </div>
+            </section>
+            
+        </div>
+        <div class="gradient-background">
+            <header class="d-flex flex-wrap justify-content-end py-3">
+                <ul class="nav nav-pills py-4">
+                    <li class="nav-item"><a href="./about.html" class="nav-link white" aria-current="page">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link white">Projects</a></li>
+                    <li class="nav-item"><a href="./resume.html" class="nav-link white">Resume</a></li>
+                    <li class="nav-item"><a href="./miscellaneous.html" class="nav-link white">Miscellaneous</a></li>
+                  </ul>
+            </header>
+            <h1 class="p-4 white">Lets get in touch</h1>
+            <section id="contact-me" class="py-4 border-top">
+                <div class=" container pb-4">
+                    <h2 class="white center py-3">I'd love to hear from you</h2>
+                    <p class="white center pt-2 size-up">Any questions, opinions, proposals or simply want to say hi?</p>
+                    <p class="white center pb-2 size-up">Your feedback is invaluable to me. I'm excited to hear from you!</p>
+                    <form class="row g-3" action="https://formsubmit.co/emmanuela0k01@gmail.com" method="POST">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label white">First Name</label>
+                            <input type="text" class="form-control background-light" id="firstName" required placeholder="Enter First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label white">Last Name</label>
+                            <input type="text" class="form-control background-light" id="lastName" required placeholder="Enter Last Name">
+                        </div>
+                        <div class="col-md-8">
+                            <label for="emailInfo" class="form-label white">E-mail</label>
+                            <input type="email" class="form-control background-light" id = "emailInfo" required placeholder="Enter Email Adderess">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phoneNumber" class="form-label white">Phone Number</label>
+                            <input type="text" class="form-control background-light" id = "phoneNumber" placeholder="+1 (234) 567-8910">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comments" class="form-label white">Comments, Questions?</label>
+                            <textarea class="form-control background-light" id="comments" rows="4" required placeholder="Hello, we are from..."></textarea>
+                        </div>
+                        <div class="col-md-12 center">
+                            <button type="submit" class=" btn btn-outline-light">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="gradient-darkblue border-top">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+          <p class="col-md-4 mb-0 white">© Emmanuel Adekoya, 2023</p>
+      
+          <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="../images/logo.png" alt="E logo" width="75" height="75">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./about.html" class="nav-link px-2 white">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 white">Projects</a></li>
+            <li class="nav-item"><a href="./resume.html" class="nav-link px-2 white">Resume</a></li>
+            <li class="nav-item"><a href="./miscellaneous.html" class="nav-link px-2 white">Miscellaneous</a></li>
+          </ul>
+            <a href="mailto:emmanuela0k01@gmail.com" class="nav-link p-0 white">Personal email: emmanuela0k01@gmail.com</a>
+            <a href="mailto:emmanueladekoya@cmail.carleton.ca" class="nav-link p-0 white">University email: emmanueladekoya@cmail.carleton.ca</a>
+        </footer>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "4de263ba-498c-41c1-9464-1f497eb8cbec",
+                To : 'emmanuela0k01@gmail.com',
+                From : "emmanuela0k01@gmail.com",
+                Subject : "Your Website Has Had a Visitor who Contacted",
+                Body : "Name: " + document.getElementById("firstName").value + document.getElementById("lastName").value
+                    + "<br> Email: " + document.getElementById("emailInfo").value
+                    + "<br> Phone Number: " + document.getElementById("phoneNumber").value
+                    + "<br> Message: " + document.getElementById("comments").value
+            }).then(
+            message => alert("Message Sent")
+            );
+        }
+    </script>
+</body>
+</html>

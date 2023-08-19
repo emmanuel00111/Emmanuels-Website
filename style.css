@@ -1,0 +1,114 @@
+.gradient-background {
+    background: linear-gradient(300deg, #576cbc, #19376d, #0b2447, #19376d, #576cbc);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .gradient-plain{
+    background: linear-gradient(300deg, #B3C6FF, #B3C6FF, #B3C6FF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .gradient-darkblue{
+    background: #25498e;
+    /*background-size: 180% 180%;*/
+  }
+  .gradient-blue{
+    background: linear-gradient(300deg, #576cbc, #576cbc, #576cbc);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .pattern-black{
+    background-image: url(./images/random-items.png);
+    background-size: 600px;
+  }
+  /*.pattern-white{
+    background-image: url(./images/IMG_0141_preview_rev_1.png);
+    background-size: 40%;
+  }*/
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .white{
+    color: #F4F8FF;
+  }
+  .black{
+    color: #100036;
+  }
+  #here{
+    font-size: large;
+    color: #C5CAE9;
+  }
+  .opacity{
+    opacity: 0%;
+  }
+  .background-light{
+    background-color: #d8daf5;
+  }
+  .center{
+    text-align: center;
+    justify-content: center;
+  }
+  .size-up{
+    font-size: 115%;
+  }
+  .download-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1px;
+  }
+  .grid-container-resume{
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    gap: 1px;
+  }
+  .flex-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 10%;
+  }
+  .grid-container-about{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 1px;
+  }
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("https://d33wubrfki0l68.cloudfront.net/8036012d5d6add8a4bad0ea000696eaaa65f48e8/b349c/fonts/sf-ui-text-bold.woff") format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("https://d33wubrfki0l68.cloudfront.net/40bfa1f818a39a90632b8be1013054bf3e6e3f43/1ea9b/fonts/sf-ui-text-regularitalic.woff") format('woff');
+  font-display: swap;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url("https://d33wubrfki0l68.cloudfront.net/e8020de2a082b7f99bd455cd96d87d90e5104367/809fe/fonts/sf-ui-text-light.woff") format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
