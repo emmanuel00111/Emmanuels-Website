@@ -123,4 +123,24 @@
   font-style: normal;
   font-weight: 300;
 }
+@media (max-width: 600px) {
+  .grid-container-about{
+    display: grid;
+    grid-template-columns: 0fr 4fr 0fr;
+    gap: 20px;
+  }
+  .grid-container-projects{
+    display: grid;
+    grid-template-columns: 0fr 4fr 0fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-container-resume{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 2fr 4fr ;
+    gap: 1px;
+  }
+}
 
