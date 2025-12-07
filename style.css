@@ -1,3 +1,104 @@
+:root {
+  --bg-main: #050816;
+  --bg-secondary: #0b1220;
+  --bg-accent: #111827;
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.15);
+  --border-soft: rgba(148, 163, 184, 0.2);
+}
+
+/* Light theme override */
+:root.light-theme {
+  --bg-main: #f9fafb;
+  --bg-secondary: #ffffff;
+  --bg-accent: #e5e7eb;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.12);
+  --border-soft: rgba(148, 163, 184, 0.5);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #020617 0, #020617 35%, #020617 100%);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+}
+
+/* Use your existing gradient classes but tie them into vars */
+.gradient-background {
+  background: radial-gradient(circle at top, #0f172a 0, #020617 50%, #020617 100%);
+}
+
+.gradient-darkblue {
+  background: linear-gradient(135deg, #020617, #0b1120, #020617);
+}
+
+.white { color: var(--text-main); }
+.black { color: #020617; }
+
+/* Subtle glass card */
+.card-glass {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95));
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(18px);
+}
+
+/* Fade-in animation base */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #38bdf8, #a855f7);
+  z-index: 9999;
+}
+
+/* Back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(10px);
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 .gradient-background {
     background: linear-gradient(300deg, #576cbc, #19376d, #0b2447, #19376d, #576cbc);
     background-size: 180% 180%;
