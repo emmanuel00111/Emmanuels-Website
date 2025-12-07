@@ -75,3 +75,19 @@
 
   animatedEls.forEach(el => observer.observe(el));
 })();
+
+// CONTACT FORM: basic double-submit guard + UX
+(function () {
+  const form = document.querySelector('form[action*="formsubmit.co"]');
+  if (!form) return;
+
+  form.addEventListener('submit', () => {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      const originalText = submitBtn.innerText;
+      submitBtn.dataset.originalText = originalText;
+      submitBtn.innerText = 'Sending...';
+    }
+  });
+})();

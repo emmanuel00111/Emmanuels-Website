@@ -244,4 +244,28 @@ body {
     gap: 1px;
   }
 }
+.timeline {
+  border-left: 2px solid var(--border-soft);
+  padding-left: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 0.75rem; 
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -6px; 
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+
 
